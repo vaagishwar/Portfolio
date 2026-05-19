@@ -1,9 +1,14 @@
 import React from 'react'
 import me from '../assets/profile.png'
+import download from '../assets/download.png'
+import pdf from '../assets/Final_Resume.pdf'
 import { useTheme } from '../context/themeContext.jsx'
+import github from '../assets/github.png'
+
 
 import { motion } from 'motion/react'
 const Home = () => {
+
 
    const { isDarkMode, setDarkMode, toggleDarkMode } = useTheme()
   return (
@@ -15,7 +20,7 @@ const Home = () => {
 
         <motion.div whileHover={{ scale: 1.04, ease: "easeOut" }} initial={{ opacity: 0, y: 10 }} transition={{ duration: 0.3, ease: "easeOut" }} animate={{ opacity: 1, y: 0 }} className="p-[4px] rounded-full bg-[conic-gradient(#db4437_0deg_70deg,#f4b400_70deg_140deg,#0f9d58_140deg_220deg,#4285f4_220deg_320deg,#db4437_320deg_360deg)]">
 
-          <img src={me} alt="profile.png" className='size-30 lg:size-40 rounded-full border-4 border-white' />
+          <img src={me} alt="profile.png" className={isDarkMode?"size-30 lg:size-40 rounded-full border-4 border-black":'size-30 lg:size-40 rounded-full border-4 border-white'} />
         </motion.div>
 
 
@@ -23,7 +28,14 @@ const Home = () => {
         {/* <img src={me} alt="me.png" className='absolute bottom-0 -z-1 lg:size-[400px] object-cover w-[300px]' /> */}
         <motion.h1 initial={{ opacity: 0, y: 10 }} transition={{ duration: 0.65, ease: "easeOut", delay: 0.2 }} animate={{ opacity: 1, y: 0 }} className='name text-4xl lg:text-7xl'>Vaagishwar M</motion.h1>
         <motion.h1 initial={{ opacity: 0, y: 10 }} transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }} animate={{ opacity: 1, y: 0 }} className='max-w-[290px] sm:max-w-[300px] md:max-w-lg lg:text-2xl lg:max-w-3xl text-center pb-9' >Web Dev Intern | Zoho Cliqtrix Enthusiast | MERN-Stack Developer | IEEE Research Project & Open-Source Contribution</motion.h1>
-        <div className="" className={isDarkMode?"absolute  top-0 h-40 w-full -z-10 overlay  bg-[linear-gradient(#030712ff,#03071200)]":"absolute  top-0 h-40 w-full -z-10 overlay  bg-[linear-gradient(#ffffffff,#ffffff00)]"} ></div>      </div>
+
+        <div className="" className={isDarkMode?"absolute  top-0 h-40 w-full -z-10 overlay  bg-[linear-gradient(#030712ff,#03071200)]":"absolute  top-0 h-40 w-full -z-10 overlay  bg-[linear-gradient(#ffffffff,#ffffff00)]"} ></div>
+        <div className="flex gap-4 items-center">
+          <motion.a whileHover={{scale:1.06}} initial={{opacity:0, y:10}} animate={{opacity:1,y:0}} transition={{duration:0.45, ease:"easeOut", delay:0.6}} className={isDarkMode?"text-sm md:text-lg bg-white rounded-full flex p-2 px-4 text-black font-medium shadow-xl cursor-pointer m-1":"m-1 text-sm md:text-lg bg-black rounded-full flex p-2 px-4 text-white font-medium drop-shadow-2xl cursor-pointer"} href={pdf} target='_blank' > Get Resume</motion.a>
+        <motion.a initial={{opacity:0, y:10}} animate={{opacity:1,y:0}} transition={{duration:0.40, ease:"easeOut", delay:0.8}}  href="https:github.com/vaagishwar" target="_blank" className='size-10 ' ><img src={github} alt="github" className='' /></motion.a>
+        
+        </div>
+        </div>
       <div className="" className={isDarkMode?"absolute  bottom-0 h-70 w-full  -z-10 overlay bg-[linear-gradient(#03071200,#030712ff)]":"absolute  bottom-0 h-70 w-full  -z-10 overlay bg-[linear-gradient(#ffffff00,#ffffffff)]"}></div>
     </>
   )
