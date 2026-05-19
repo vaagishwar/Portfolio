@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme
+{
+    /* --color-clifford: #da373d; */
+}
+
+
+.name{
+    font-family: Inter;
+    font-weight: 600;
+}
+::selection{
+    background-color: #FCD34Dee;
+    color:black
+}
+

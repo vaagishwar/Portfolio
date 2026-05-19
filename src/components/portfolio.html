@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Vaagishwar | Portfolio</title>
+</head>
+
+<body class="" id="body">
+    <nav class='flex justify-between py-5 px-7 items-center sticky z-10 top-0 md:text-md bg-transparent text-sm'>
+        <ul>
+            <li><h2 class="">/Home</h2></li>
+        </ul>
+        <ul class='flex md:gap-9 gap-4 bg-amber-300 p-0 md:py-2 rounded-full px-3 py-0.5 md:px-7 uppercase'>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <ul class='flex gap-1 text-2xl '>
+            <li><a href="https:github.com/vaagishwar" target="_blank"><img src='../assets/github.png' alt="github"
+                        class='size-8 object-contain' /></a></li>
+        </ul>
+    </nav>
+    <!-- Home -->
+    <div class="absolute -z-20 inset-0 h-full w-full  bg-[linear-gradient(to_right,#55555511_1px,transparent_1px),linear-gradient(to_bottom,#55555511_1px,transparent_1px)] bg-[size:40px_40px]" id="grid" />
+    <div class='min-h-[80vh] flex flex-col justify-center items-center gap-4 relative z-30' id="desc">
+
+
+        <div
+            class="p-[4px] rounded-full bg-[conic-gradient(#db4437_0deg_70deg,#f4b400_70deg_140deg,#0f9d58_140deg_220deg,#4285f4_220deg_320deg,#db4437_320deg_360deg)]">
+            <img src='../assets/profile.png' onclick="mode(this)" alt="profile.png"
+                class='size-30 lg:size-40 rounded-full border-4 border-white' />
+
+        </div>
+        <h1 class='name text-4xl lg:text-7xl'>Vaagishwar M</h1>
+        <h1 class='max-w-[290px] sm:max-w-[300px] md:max-w-lg lg:text-2xl lg:max-w-3xl text-center pb-9'>Web Dev Intern
+            | Zoho Cliqtrix Enthusiast | MERN-Stack Developer | IEEE Research Project & Open-Source Contribution</h1>
+            <div class="absolute bg-[linear-gradient(#ffffffff,#ffffff00)] top-0 h-40 w-full -z-10 overlay " ></div>
+        </div>
+        <div class="absolute bg-[linear-gradient(#ffffff00,#ffffffff)] bottom-0 h-70 w-full  -z-10 overlay"></div>
+
+
+    <!-- About -->
+    <!-- <div class="py-25 h-screen">
+        <h2 class='text-center md:text-4xl text-2xl relative ' id=''>ABOUT</h2>
+    </div> -->
+
+    <!-- Projects -->
+
+    <div class='mx-10' id='Projects'>
+        <div class="py-25">
+            <h2 class='text-center md:text-4xl text-2xl'>PROJECTS</h2>
+        </div>
+        <div class="flex gap-4 flex-wrap justify-evenly">
+            <!-- 1 -->
+            <div
+                class=" border-mist-300 border w-70 md:w-85 flex flex-col items-center justify-between rounded-2xl bg-white rounded-t-2xl gap-3 ">
+                <div class='h-[120px]'>
+                    <img src='../assets/tt.png' alt="tt"
+                        class=' cursor-pointer transition-transform ease-in-out w-full object-cover rounded-t-2xl' />
+                </div>
+                <div class='mt-2 bg-white rounded-xl flex flex-col gap-1 '>
+                    <h1 class='text-2xl text-blue-500 text-center font-semibold p-3 relative z-10 w-full'>Timetable
+                        Management</h1>
+
+                    <p class='px-5 text-center text-sm'>A productive login based timetable which highlights ongoing
+                        period respective to their classes<span class='text-blue-500 cursor-pointer'>..more</span> </p>
+
+                    <div class='flex flex-wrap gap-1  justify-center text-sm mt-1 '>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#javascript</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#css</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#tailwind</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>+1</p>
+                    </div>
+                </div>
+
+                <div class='h-3'></div>
+            </div>
+            <!-- 2 -->
+            <div
+                class=" border-mist-300 border w-70 md:w-85 flex flex-col items-center justify-between rounded-2xl bg-white rounded-t-2xl gap-3 ">
+                <div class='h-[120px]'>
+                    <img src='../assets/ff.png' alt="tt"
+                        class=' cursor-pointer transition-transform ease-in-out w-full object-cover rounded-t-2xl' />
+                </div>
+                <div class='mt-2 bg-white rounded-xl flex flex-col gap-1 '>
+                    <h1 class='text-2xl text-blue-500 text-center font-semibold p-3 relative z-10 w-full'>Friendship
+                        Quiz</h1>
+
+                    <p class='px-5 text-center text-sm'>A Friendship quizzes and sharable Links which include personal
+                        questions, score tracking.<span class='text-blue-500 cursor-pointer'>..more</span> </p>
+
+                    <div class='flex flex-wrap gap-1  justify-center text-sm mt-1 '>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#javascript</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#css</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#tailwind</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>+1</p>
+                    </div>
+                </div>
+
+                <div class='h-3'></div>
+            </div>
+
+            <!-- 3 -->
+            <div
+                class=" border-mist-300 border w-70 md:w-85 flex flex-col items-center justify-between rounded-2xl bg-white rounded-t-2xl gap-3 ">
+                <div class='h-[120px]'>
+                    <img src='../assets/nm.png' alt="tt"
+                        class=' cursor-pointer transition-transform ease-in-out w-full object-cover rounded-t-2xl' />
+                </div>
+                <div class='mt-2 bg-white rounded-xl flex flex-col gap-1 '>
+                    <h1 class='text-2xl text-blue-500 text-center font-semibold p-3 relative z-10 w-full'>E-Notice
+                        Management</h1>
+
+                    <p class='px-5 text-center text-sm'>A Notice board management application focuses CRUD notices on
+                        webpages using Node.js.<span class='text-blue-500 cursor-pointer'>..more</span> </p>
+
+                    <div class='flex flex-wrap gap-1  justify-center text-sm mt-1 '>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#javascript</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#css</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#tailwind</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>+1</p>
+                    </div>
+                </div>
+
+                <div class='h-3'></div>
+            </div>
+
+            <!-- 4 -->
+            <div
+                class=" border-mist-300 border w-70 md:w-85 flex flex-col items-center justify-between rounded-2xl bg-white rounded-t-2xl gap-3 ">
+                <div class='h-[120px]'>
+                    <img src='../assets/sc.png' alt="tt"
+                        class=' cursor-pointer transition-transform ease-in-out w-full object-cover rounded-t-2xl' />
+                </div>
+                <div class='mt-2 bg-white rounded-xl flex flex-col gap-1 '>
+                    <h1 class='text-2xl text-blue-500 text-center font-semibold p-3 relative z-10 w-full'>SiteComments
+                    </h1>
+
+                    <p class='px-5 text-center text-sm'>A Chrome Extension that enables users to Like and comment on any
+                        website you visit<span class='text-blue-500 cursor-pointer'>..more</span> </p>
+
+                    <div class='flex flex-wrap gap-1  justify-center text-sm mt-1 '>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#javascript</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#css</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>#tailwind</p>
+                        <p class='border-mist-500 border text-mist-800 font-medium text-[11px] flex items-center text-center rounded-2xl px-1'>+1</p>
+                    </div>
+                </div>
+
+                <div class='h-3'></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="py-25 h-screen" id="Contact">
+        <h2 class='text-center md:text-4xl text-2xl'>CONTACT ME</h2>
+        <img src="../assets/construction.png" alt="working" class="size-70 mx-auto mt-100">
+    </div>
+    <div className='py-45'></div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
