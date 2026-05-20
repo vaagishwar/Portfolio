@@ -4,6 +4,7 @@ import ff from '../assets/ff.png'
 import tt from '../assets/tt.png'
 import nm from '../assets/nm.png'
 import { useTheme } from '../context/themeContext'
+import { motion } from "motion/react"
 const Projects = () => {
 
     const { isDarkMode, setDarkMode, toggleDarkMode } = useTheme()
@@ -12,7 +13,7 @@ const Projects = () => {
   return (
     <>
       <div className='mx-10' id='Projects'>
-        <div className="py-25"> <h1 className={isDarkMode?"text-white text-center md:text-4xl text-2xl":"text-center md:text-4xl text-2xl"} >PROJECTS</h1></div>
+        <div className="py-25"> <h1 className={isDarkMode?"relative z-10 text-white text-center md:text-4xl text-2xl":"relative z-10 text-center md:text-4xl text-2xl"} >PROJECTS</h1></div>
         <div className="flex gap-4 flex-wrap justify-evenly">
 
 

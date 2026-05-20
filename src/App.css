@@ -4,6 +4,16 @@
     /* --color-clifford: #da373d; */
 }
 
+@media (min-width: 768px) {
+  body {
+    cursor: none !important;
+  }
+}
+button,
+svg,
+a {
+  cursor: none !important;
+}
 
 .name{
     font-family: Inter;
@@ -13,4 +23,29 @@
     background-color: #FCD34Dee;
     color:black
 }
+.glossy-btn {
+  position: relative;
+  overflow: hidden;
 
+}
+
+.glossy-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: rotate(30deg);
+  transition: all 0.6s ease;
+}
+
+.glossy-btn:hover::after {
+  left: 150%; /* Moves the "glare" across the button */
+}

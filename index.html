@@ -6,8 +6,24 @@
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Vaagishwar</title>
+    <script>
+      (() => {
+        try {
+          const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+          const backgroundColor = isDarkMode ? '#030712' : '#ffffff';
+
+          document.documentElement.style.backgroundColor = backgroundColor;
+          document.documentElement.style.colorScheme = isDarkMode ? 'dark' : 'light';
+        } catch {
+          document.documentElement.style.backgroundColor = '#ffffff';
+        }
+      })();
+    </script>
   </head>
   <body>
+    <script>
+      document.body.style.backgroundColor = document.documentElement.style.backgroundColor;
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
